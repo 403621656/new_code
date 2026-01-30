@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 
-router = FastAPI()
+app = FastAPI()
 
-@router.get("/health_check")
+@app.get("/health_check")
 async def health_check() -> bool:
     return True
 
